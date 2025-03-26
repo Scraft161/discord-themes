@@ -1,0 +1,51 @@
+/* Disable title bar, we don't need it nor any of the things in it
+** If you want control over the individual pieces look at the hacks below
+*/
+
+div[class^=bar_] {
+    display: none;
+}
+
+.visual-refresh {
+    --custom-app-top-bar-height: 0;
+}
+
+section[class^=panels_] {
+    margin-left: calc(var(--custom-guild-list-width) - 6px);
+    width: calc(100% - var(--custom-guild-list-width)) !important; /* needs important to apply */
+    border-radius: 0 !important; /* needs important to apply */
+    bottom: 0 !important; /* needs important to apply */
+}
+
+nav[class^="wrapper_"] {
+    --custom-app-panels-height: 0;
+    z-index: 2;
+}
+
+div[class^="textArea_"] {
+    height: 43.989px !important;
+    min-height: 43.989px;
+    div {
+        div[class^="markup_"] {
+            height: 43.989px;
+            min-height: 43.989px !important;
+        }
+        div[class^="placeholder_"] {
+            height: 43.989px;
+            min-height: 43.989px !important;
+            padding-top: 11px;
+        }
+    }
+}
+div[class^="attachwrapper_"] {
+    height: 43.989px !important;
+    min-height: 43.989px;
+}
+div[class^="attachWrapper_"] > button {
+    height: 43.989px !important;
+    min-height: 43.989px;
+}
+div[class^=inner_] > div[class^="buttons_"] {
+    height: 43.989px;
+    min-height: 43.989px;
+}
