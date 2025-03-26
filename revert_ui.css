@@ -23,12 +23,14 @@ nav[class^="wrapper_"] {
 }
 
 div[class^="textArea_"] {
-    height: 43.989px !important;
     min-height: 43.989px;
+    --custom-channel-textarea-text-area-height: 43.989;
+    --custom-channel-textarea-text-area-max-height: 535.399px !important;
     div {
         div[class^="markup_"] {
-            height: 43.989px;
             min-height: 43.989px !important;
+            padding-top: 11px;
+            padding-bottom: 11px;
         }
         div[class^="placeholder_"] {
             height: 43.989px;
@@ -37,9 +39,12 @@ div[class^="textArea_"] {
         }
     }
 }
-div[class^="attachwrapper_"] {
+div[class^="attachWrapper_"] {
     height: 43.989px !important;
-    min-height: 43.989px;
+    min-height: 43.989px !important;
+    max-height: 43.989 !important;
+    position: sticky;
+    top: 0;
 }
 div[class^="attachWrapper_"] > button {
     height: 43.989px !important;
