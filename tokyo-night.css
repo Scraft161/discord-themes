@@ -1,0 +1,161 @@
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark {
+    --background-base-lower: var(--background-primary);
+    --background-primary: #1A1B26;
+    --background-secondary: #171722;
+    --background-secondary-alt: #13131A;
+    --background-tertiary: #16161E;
+    --bg-base-primary: #FF0000;
+    --bg-base-secondary: #171722;
+    --bg-base-tertiary: #16161E;
+    --bg-brand: var(--tn-brand-dark);
+    --background-mentioned: #252836;
+    --button-filled-brand-background: var(--tn-blue-dark);
+    --background-surface-high: var(--background-primary);
+    --background-surface-higher: #24283B;
+    --background-surface-highest: #414868;
+    --background-base-low: var(--background-primary);
+    --card-primary-bg: var(--background-primary);
+
+    --text-normal: #B1BAE6;
+    --text-muted: #565f89;
+    --text-primary: var(--text-normal);
+    --text-secondary: var(--text-muted);
+    --text-brand: var(--tn-brand);
+    --header-primary: var(--text-normal);
+    --header-secondary: var(--text-muted);
+    --icon-primary: #5F647E;
+    --icon-tertiary: var(--icon-primary);
+    --channels-default: var(--text-muted);
+    --text-default: var(--text-primary);
+    --text-positive: var(--tn-green);
+
+    --interactive-normal: var(--text-muted);
+    --interactive-hover: var(--tn-white);
+    --interactive-active: var(--text-normal);
+    --button-outline-danger-text: var(--tn-red);
+    --button-danger-background: var(--tn-red-dark);
+    --redesign-input-control-selected: var(--tn-blue);
+    --checkbox-background-checked: var(--tn-brand);
+    --checkbox-background-default: var(--background-secondary);
+    --checkbox-border-checked: var(--tn-brand);
+    --checkbox-border-default: var(--background-secondary-alt);
+
+    --tn-brand: var(--tn-blue);
+    --tn-red:   #f7768e;
+    --tn-blue:  #7AA2F7;
+    --tn-white: #cfc9c2;
+    --tn-green: #9ece6a;
+    --tn-brand-dark: var(--tn-blue-dark);
+    --tn-red-dark:  #8c4351;
+    --tn-blue-dark: #2959aa;
+    --tn-black: #16161E;
+}
+
+div[id^="message-accessories-"] {
+    >[class^="embedWrapper_"] {
+        background: var(--background-secondary);
+    }
+}
+
+div[class^="bottomControls"]>div[class*="noWrap"]>div[class^="attachedCaretButtonContainer"]>div>button[class^="staticButton_"] {
+    background-color: var(--tn-green) !important;
+}
+
+/* Search widget */
+div[class^=search__] div[class^=searchBar_] {
+    background-color: var(--background-secondary-alt);
+    border: none;
+}
+
+/* Chat input bar */
+div[class^=channelTextArea] {
+    border: none;
+}
+div[class^=channelTextArea]>div {
+    background-color: var(--background-secondary) !important;
+}
+
+/* Channel sidebar */
+div[class^=scroller__] {
+    background-color: var(--background-secondary) !important;
+}
+
+div[class^=searchBar__] {
+    background-color: var(--background-secondary);
+}
+
+/* Server sidebar top menu */
+div[class^=sidebarList_] > nav[class^=container_] {
+    background-color: var(--background-secondary);
+}
+
+/* Settings sidebar */
+div[class^="sidebarRegionScroller"] {
+    background-color: var(--background-secondary) !important;
+}
+
+div[class^=side_]>div[class*=item_] {
+    color: var(--icon-primary) !important;
+}
+
+div[class^="socialLinks__"]>a {
+    color: var(--icon-primary) !important;
+}
+
+/* Enable/Disable slider */
+div[class^=control_] > div[class^=container][class*=checked__] {
+    background-color: var(--tn-blue) !important;
+}
+/* User panel */
+section[class^=panels_] {
+    background-color: var(--tn-black) !important;
+    
+    div[class^=buttons] > * div > * {
+        color: var(--icon-primary);
+    }
+}
+
+/* Edge case for the message scroller */
+main[class^=chatContent] > div > div > div {
+    background-color: var(--background-primary) !important;
+}
+
+div[class*=selectedChannel] > div > a {
+    background-color: var(--background-mentioned) !important;
+}
+
+/* Unread divider */
+div[class^=divider__][class*=isUnread__] {
+    border-color: var(--tn-red);
+
+    span[class^=content_] {
+        color: var(--tn-red);
+    }
+    span[class^=unreadPill_] {
+        background-color: var(--tn-red);
+        --divider-color: var(--tn-red);
+    }
+}
+
+/* Message actions menu */
+div[class*=popoverReactionHoverBar_] {
+    background-color: var(--background-secondary) !important;
+}
+
+/* Channels & Roles */
+div[class^=prompt] {
+    background-color: var(--background-primary) !important;
+}
+div[class^=optionButtonWrapper__][class*=selected] {
+    border-color: var(--tn-brand) !important;
+    background-color: color-mix(in srgb, var(--tn-brand) 8%, transparent) !important;
+
+    div[class^=checkIcon] {
+        background-color: var(--tn-brand);
+    }
+}
+
+div[class*=modeSelected_] > div[class^=link__] {
+    background-color: var(--background-mentioned);
+}

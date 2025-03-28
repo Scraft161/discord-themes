@@ -10,11 +10,15 @@ div[class^=bar_] {
     --custom-app-top-bar-height: 0;
 }
 
+/* User panel */
 section[class^=panels_] {
     margin-left: calc(var(--custom-guild-list-width) - 6px);
-    width: calc(100% - var(--custom-guild-list-width)) !important; /* needs important to apply */
-    border-radius: 0 !important; /* needs important to apply */
-    bottom: 0 !important; /* needs important to apply */
+    width: calc(100% - var(--custom-guild-list-width)) !important;
+    /* needs important to apply */
+    border-radius: 0 !important;
+    /* needs important to apply */
+    bottom: 0 !important;
+    /* needs important to apply */
 }
 
 nav[class^="wrapper_"] {
@@ -22,16 +26,26 @@ nav[class^="wrapper_"] {
     z-index: 2;
 }
 
+div[class^=scroller__] {
+    margin-bottom: 0 !important;
+}
+div[class^=scroller__][data-list-id^="private-channels-uid"] {
+    margin-bottom: 54px !important;
+}
+
+/* Text input */
 div[class^="textArea_"] {
     min-height: 43.989px;
     --custom-channel-textarea-text-area-height: 43.989;
     --custom-channel-textarea-text-area-max-height: 535.399px !important;
+
     div {
         div[class^="markup_"] {
             min-height: 43.989px !important;
             padding-top: 11px;
             padding-bottom: 11px;
         }
+
         div[class^="placeholder_"] {
             height: 43.989px;
             min-height: 43.989px !important;
@@ -39,6 +53,7 @@ div[class^="textArea_"] {
         }
     }
 }
+
 div[class^="attachWrapper_"] {
     height: 43.989px !important;
     min-height: 43.989px !important;
@@ -46,11 +61,13 @@ div[class^="attachWrapper_"] {
     position: sticky;
     top: 0;
 }
-div[class^="attachWrapper_"] > button {
+
+div[class^="attachWrapper_"]>button {
     height: 43.989px !important;
     min-height: 43.989px;
 }
-div[class^=inner_] > div[class^="buttons_"] {
+
+div[class^=inner_]>div[class^="buttons_"] {
     height: 43.989px;
     min-height: 43.989px;
 }
