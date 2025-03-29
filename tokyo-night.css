@@ -16,6 +16,8 @@
     --background-surface-highest: #414868;
     --background-base-low: var(--background-primary);
     --card-primary-bg: var(--background-primary);
+    --modal-background: var(--background-primary);
+    --background-mod-subtle: var(--background-secondary);
 
     --text-normal: #B1BAE6;
     --text-muted: #565f89;
